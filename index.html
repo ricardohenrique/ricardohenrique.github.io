@@ -14,7 +14,9 @@
         <script src="main.js"></script>
     </head>
     <body id="home">
-        <i class="fa fa-bars" aria-hidden="true" id="navbar-click"></i>
+        <div class="nav-bar">
+            <i class="fa fa-bars" aria-hidden="true" id="navbar-click"></i>
+        </div>
         <div class="nav">
             <i class="fa fa-times" aria-hidden="true" id="navbar-close"></i>
             <ul>
@@ -23,7 +25,13 @@
                 <li><a href="">Blog</a></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="nav-languages">
+            <ul>
+                <li class="active" id="pt">pt</li>
+                <li id="en">en</li>
+            </ul>   
+        </div>
+        <div class="container" id="curriculo-pt">
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="text-center">Ricardo Henrique Benevides Mota</h1>
@@ -173,11 +181,169 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <p id="footer">
+                    <p class="footer">
                         Estou à disposição para qualquer esclarecimento de informação e disposto a realizar contato pessoal.
                     </p>
                 </div>
             </div>
         </div>
+
+        <div class="container" id="curriculo-en">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center">Ricardo Henrique Benevides Mota</h1>
+                    <p>
+                        Marital status: Single | Address: Street Alberto Borges Soveral, São Paulo – SP – 05875-210 <br>
+                        Phone: (11) 5834-6391 | Mobile: (11) 9.9396-1643 <br>
+                        Email:  ricardo.hb@outlook.com | Date of birth: March 9th, 1993
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">Objective</h2>
+                    <p>
+                        Acting in Analysis and Development.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center">Work experience</h3>
+                    <p><strong>AUG 2015 – ACTUAL | ANALYST WEB DEVELOPER | I10AS COMPANY</strong></p>
+                    <p>
+                        Development and maintenance/conservation of Web Systems (PHP);<br>
+                        Advanced development of SEO(Search Engine Optimization);<br>
+                        Construct and Data Base manipulation(MySQL and SQL Server);<br>
+                        Development of UML diagrams: Requirements analysis, Use-Case analysis, Class Diagram, Sequence Diagram, and State Machine Diagram. Among others  important analysis relevant to documentation; 
+                    </p>
+                    <p><strong>FEB 2015 – JUL 2015 | PROGRAMMING WEB | I10AS COMPANY</strong></p>
+                    <p>
+                        Development and Websites maintenance(PHP);<br>
+                        Physical development and maintenance database(MySQL);<br>
+                        Assist in requirements analysis for the development of Web systems.
+                    </p>
+                    <p><strong>JUL 2014 – JAN 2015 | WEB DEVELOPING TREINEE | I10AS COMPANY</strong></p>
+                    <p>
+                        Assist in development and Websites maintenance(PHP);<br>
+                        Assist in Websites documentation;<br>
+                        Assist in the conceptual development of web database.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="text-center">Skills and expertise</h4>
+                    <p><strong>DEVELOPMENTS LANGUAGES</strong></p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> HTML5 – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> CSS3 – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> PHP – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Java Script – Intermediate;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Java – Intermediate;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Java EE – Basic;</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Visual Basic – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> C – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> C# – Intermediate;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> DBMS MySQL – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> DBMS Oracle – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> DBMS SQL Serve – Intermediate;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><strong>FRAMEWORKS</strong></p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Laravel 5 – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Codeigneter 3 – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Symfony Framework – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Zend Framework 2 – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> .NET – Basic;</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Angular JS – Basic;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> JQuery – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Bootstrap – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Fundation – Intermediate;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Ionic – Intermediate; </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><strong>TOOLS</strong></p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Sublime-Text 3, ATOM – Advanced;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Android Studio – Basic;</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Eclipse – Intermediate;</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Netbeans – Basic;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="text-center">Academic</h5>
+                    <p><strong>B.A | ANALYSIS AND SYSTEMS DEVELOPMENT | UNINOVE | STUDING 3RD HALF-YEAR</strong></p>
+                    <p>
+                        Languages: C, C#, JAVA, PHP, JavaScript, PLSQL(DB);<br>
+                        Conceptual, logical and physical database development(Oracle);<br>
+                        Web development: HTML5, CSS3;<br>
+                        Programming logic classical and quantum;<br>
+                        Analysis and software development management.
+                    </p>
+                    <p><strong>ENGLISH | NORTH AMERICAN CULTURAL (CNA) | ADVANCED</strong></p>
+                    <p>
+                        Reading and Writing;<br>
+                        Conversation;<br>
+                        American Culture;;
+                    </p>
+                    <p><strong>INTENSIVE ENGLISH (USA) | UNIVERSITY OF ST. THOMAS – MINNESOTA | 720 HOURS | DEZ 2015</strong></p>
+                    <p>
+                        Structure and essence of English;<br>
+                        Reading and Writing;<br>
+                        Casual and dynamic conversation;
+                    </p>
+                    <p><strong>TECHNICAL IN ANALYSIS AND SOFTWARE DEVELOPMENT | ETEC | COMPLETED IN DEZ 2014 </strong></p>
+                    <p>
+                        Languages: Java, Visual Basic, PHP, JavaScript;<br>
+                        Web: HTML5, CSS3;<br>
+                        Data base: Conceptual(ERM and ER), logical and physical(MySQL);<br>
+                        Operating Systems: Linux, Windows Server 2008 and 2012;<br>
+                        Maintenance and mounting: Hardware;
+                    </p>
+                    <p><strong>ELECTRONICS TECHNICIAN | ETEC | COMPLETED IN DEZ 2012</strong></p>
+                    <p>
+                        Programming logical;<br>
+                        Low-level programming language Assembly;<br>
+                        Reading of electronic circuits;<br>
+                        Assembly with base in Layouts;
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="footer">
+                        I am available to any information clarification and willing to make personal contact.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
