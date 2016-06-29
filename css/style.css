@@ -413,6 +413,7 @@ h2, h3, h4, h5 {
   color: #536dfe; }
 
 #home .container .row div ul {
+  padding-left: 0px;
   text-align: center;
   list-style: none; }
 
@@ -437,7 +438,7 @@ h2, h3, h4, h5 {
     min-width: 140px; } }
 @media (max-width: 767px) {
   body {
-    background-image: url("../files/ricardo-henrique-mota-background-conchetes-mobile.png"); }
+    background-image: none; }
 
   /*config*/
   .hidden-xs {

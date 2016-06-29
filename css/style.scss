@@ -215,7 +215,7 @@ h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px
 }
 
 #home .container .row div p.footer{font-size: 18px;font-weight: 700;letter-spacing: 2px;margin:20px 0px;color:#536dfe;}
-#home .container .row div ul{text-align: center;list-style: none;}
+#home .container .row div ul{padding-left: 0px;text-align: center;list-style: none;}
 #home .container .row div ul li{font-size: 18px;font-weight: 300;letter-spacing: 2px;line-height: 25px;}
 
 #curriculo-en{display: none;}
@@ -231,7 +231,7 @@ h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px
 }
 
 @media (max-width: 767px){
-    body{background-image:url('../files/ricardo-henrique-mota-background-conchetes-mobile.png');}
+    body{background-image:none;}
     /*config*/
     .hidden-xs{display:none!important;}
     .container{width: 100%;z-index: 1;}
