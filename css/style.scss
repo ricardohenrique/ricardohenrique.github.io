@@ -4,23 +4,19 @@ $second-color: #424242;
 
 /*config*/
 *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-body{font-family: 'Open Sans';margin: 0;overflow-x: hidden;}
+body{font-family: 'Open Sans';margin: 0;overflow-x: hidden;background-image:url('../files/background-ricardo-henrique-mota.jpg');}
 div{display: block;}
 .container{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;width: 1170px;}
 .row{margin-right: -15px;margin-left: -15px;}
 .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before{display: table;content: " ";}
 .btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after{clear: both;}
-body{background-image:url('../files/background-ricardo-henrique-mota.jpg');}
-
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  float: left;
-}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {float: left;}
 .col-xs-12 {width: 100%;}
 .col-xs-11 {width: 91.66666667%;}
 .col-xs-10 {width: 83.33333333%;}
@@ -84,6 +80,7 @@ body{background-image:url('../files/background-ricardo-henrique-mota.jpg');}
   .col-lg-2 {width: 16.66666667%;}
   .col-lg-1 {width: 8.33333333%;}
 }
+
 .text-center{text-align: center;}
 .text-featured{font-weight: 600!important;}
 .text-invisible{color: #fff;}
@@ -112,7 +109,7 @@ p{font-size: 15px;font-weight: 300;letter-spacing: 1px;line-height: 25px;margin:
 h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px;margin-top: 15px;}
 
 /*nav-bar;*/
-.nav-bar #navbar-click{position: fixed;top: 5px;left: 5px;font-size: 35px;border: 1px solid black;padding: 10px 15px;}
+.nav-bar #navbar-click{position: fixed;top: 5px;left: 5px;font-size: 35px;border: 1px solid #000;padding: 10px 15px;background-color: rgba(255, 255, 255, 0.8);z-index: 9999;}
 .nav-bar #navbar-click:hover{cursor:crosshair;}
 .nav #navbar-close{font-size: 75px;color: #fff;margin: 20px 0px;}
 .nav #navbar-close:hover{cursor:crosshair;}
@@ -222,11 +219,15 @@ h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px
 
 @media (max-width: 992px){
     .container{width: 750px;}
+    .link-external{min-width: 140px;}
 }
 
 @media (max-width: 767px){
     /*config*/
+    .hidden-xs{display:none!important;}
     .container{width: 100%;z-index: 1;}
+    .link-external{width:30%;margin: 1%;min-width: auto;}
+    .text-right{text-align:left;}
 
     /*nav-bar*/
     .nav-bar{
@@ -245,5 +246,14 @@ h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px
     .nav #navbar-close{font-size: 50px;margin: 10px 0px;}
 
     /*home*/
-    #home .container .row div h1{font-size: 25px;margin-top: 75px;}
+    #home .container .row.row-first h1{
+      font-size: 20px;
+      text-align: center;
+      &:after{margin: 5px auto;}
+    }
+    #home .container .row.row-first h1 + .sub-title{text-align:center;}
+    #home .container .row.row-first img{max-width:200px;margin:0 auto; display:block;margin-top:50px;text-align: center;}
+    #home .container .row div ul{text-align:left;padding-left: 0px;}
+
+    #home .container .row.row-fourth .text-center{text-align:left;}
 }
