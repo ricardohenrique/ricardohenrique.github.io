@@ -9,7 +9,10 @@ body {
   font-family: 'Open Sans';
   margin: 0;
   overflow-x: hidden;
-  background-image: url("../files/background-ricardo-henrique-mota.jpg"); }
+  background-image: url("../files/ricardo-henrique-mota-background-conchetes.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 div {
   display: block; }
@@ -433,6 +436,9 @@ h2, h3, h4, h5 {
   .link-external {
     min-width: 140px; } }
 @media (max-width: 767px) {
+  body {
+    background-image: url("../files/ricardo-henrique-mota-background-conchetes-mobile.png"); }
+
   /*config*/
   .hidden-xs {
     display: none !important; }

@@ -4,7 +4,15 @@ $second-color: #424242;
 
 /*config*/
 *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-body{font-family: 'Open Sans';margin: 0;overflow-x: hidden;background-image:url('../files/background-ricardo-henrique-mota.jpg');}
+body{
+  font-family: 'Open Sans';
+  margin: 0;
+  overflow-x: hidden;
+  background-image:url('../files/ricardo-henrique-mota-background-conchetes.png');
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 div{display: block;}
 .container{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;width: 1170px;}
 .row{margin-right: -15px;margin-left: -15px;}
@@ -223,6 +231,7 @@ h2, h3, h4, h5{font-size: 25px;font-weight: 300;color:#536dfe;margin-bottom: 5px
 }
 
 @media (max-width: 767px){
+    body{background-image:url('../files/ricardo-henrique-mota-background-conchetes-mobile.png');}
     /*config*/
     .hidden-xs{display:none!important;}
     .container{width: 100%;z-index: 1;}
