@@ -11,10 +11,14 @@
         <script src="https://use.fontawesome.com/138a61fed7.js"></script>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <script src="app/main.js"></script>
+        <script src="app/app.component.js"></script>
+        <script src="app/ricardoMotaController.js"></script>
     </head>
-    <body id="home">
+    <body id="home" ng-app="ricardoMotaApp" ng-controller="ricardoMotaController">
         <div class="nav-bar">
             <i class="fa fa-bars" aria-hidden="true" id="navbar-click"></i>
         </div>
@@ -42,21 +46,19 @@
                             <img src="files/ricardo-henrique-benevides-mota.jpg" alt="">
                         </div>
                         <div class="col-sm-9">
-                            <h1 class="">Ricardo Henrique Benevides Mota</h1>
-                            <p class="sub-title">FULL STACK DEVELOPER</p>
-                            <a class="link-external" id="github" target="blank" href="https://github.com/ricardohenrique"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="link-external" id="facebook" target="blank" href="https://www.facebook.com/ricardo.henrique.10420"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="link-external" id="linkedin" target="blank" href="https://br.linkedin.com/in/ricardo-henrique-mota-9a1033104"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <h1 class="">{{fullName()}}</h1>
+                            <p class="sub-title">{{position | uppercase}}</p>
+
+                            <a ng-repeat="value in links" class="link-external" id="{{value.id}}" target="blank" href="{{value.link}}">
+                            <i class="fa fa-{{value.id}}" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="row row-second">
                         <div class="col-sm-3">
                         </div>
                         <div class="col-sm-9">
-                            <p>
-                                Acredito que o bom profissional é aquele que sempre está atualizado com as novas tecnologias, além de procurar pela aprendizagem constante.<br>
-                                Posso destacar algumas habilidades para a área como: experiência de 2 anos na área atuando com desenvolvimento server-side e client-side, vivência internacional, além de ter conhecimentos em tecnologias atuais como AngularJS, Pré-processadores(SASS e LESS), Restful, metodologias ágeis(Scrum, Kanban) entre outros.<br>
-                                Posso destacar de minhas características pessoais: assertividade, proatividade, objetividade e transparência.<br>
+                            <p ng-bind-html="apresentation">
                             </p>
                         </div>
                     </div>
@@ -548,9 +550,9 @@
                             <p class="text-invisible">|</p>
                         </div>
                         <div class="col-sm-9">
-                            <a class="link-external" id="github" target="blank" href="https://github.com/ricardohenrique"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="link-external" id="facebook" target="blank" href="https://www.facebook.com/ricardo.henrique.10420"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="link-external" id="linkedin" target="blank" href="https://br.linkedin.com/in/ricardo-henrique-mota-9a1033104"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a ng-repeat="value in links" class="link-external" id="{{value.id}}" target="blank" href="{{value.link}}">
+                            <i class="fa fa-{{value.id}}" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
