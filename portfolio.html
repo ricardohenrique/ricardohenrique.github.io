@@ -52,8 +52,9 @@
                             </a>
                         </div>
                         <div class="col-sm-12">
-                            <div class="row" ng-repeat="value in portfolio">
-                                <div class="col-sm-12">
+                            <div class="row portfolio-galery">
+                                <div class="col-sm-6" ng-repeat="value in portfolio">
+                                    <img src="files/{{value.image}}" alt="">
                                     <p>{{value.id}}: {{value.name}}</p>
                                 </div>
                             </div>

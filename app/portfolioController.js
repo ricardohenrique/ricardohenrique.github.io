@@ -23,11 +23,12 @@ app.controller("portfolioController", function($scope) {
 
     // habilidades
     $scope.portfolio = [ 
-                        { id : 1, name : 'le chef'},
-                        { id : 2, name : 'organif food fest'},
-                        { id : 3, name : 'PRG Brasil'},
-                        { id : 4, name : 'Ocean2Share'},
-                        { id : 5, name : 'LPG Brasil'},
-                        { id : 5, name : 'CTM Advogados'}
+                        { id : 1, name : 'i10as', image: 'ricardo-henrique-mota-i10as.jpg'},
+                        { id : 2, name : 'le chef', image: 'ricardo-henrique-mota-le-chef.jpg'},
+                        { id : 3, name : 'organif food fest', image: 'ricardo-henrique-mota-organic-food-fest.jpg'},
+                        { id : 4, name : 'PRG Brasil', image: 'ricardo-henrique-mota-prg-brasil.jpg'},
+                        { id : 5, name : 'Ocean2Share', image: 'ricardo-henrique-mota-ocean-2-share.jpg'},
+                        { id : 6, name : 'LPG Brasil', image: 'ricardo-henrique-mota-lpg-mais.jpg'},
+                        { id : 7, name : 'CTM Advogados', image: 'ricardo-henrique-mota-ctm-advogados.jpg'}
                     ];
 });
