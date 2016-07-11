@@ -13,26 +13,26 @@ $(function(){
     $('.nav-languages ul li#pt').click(function(){
         $('.nav-languages ul li#en').removeClass('active');
         $('.nav-languages ul li#pt').addClass('active');
-        $('#curriculo-en').hide('clip', 300);
-        $('#curriculo-pt').show('clip', 500);
+        $('#curriculo-en').hide(300);
+        $('#curriculo-pt').show(500);
     });
 
     $('.nav-languages ul li#en').click(function(){
         $('.nav-languages ul li#pt').removeClass('active');
         $('.nav-languages ul li#en').addClass('active');
-        $('#curriculo-pt').hide('clip', 300);
-        $('#curriculo-en').show('clip', 500);
+        $('#curriculo-pt').hide(300);
+        $('#curriculo-en').show(500);
     });
 });
 function openMenu(){
     $(function(){
         // console.log('click');
-        $('.nav').addClass('open').show('drop', 300);
+        $('.nav').addClass('open').show(300);
     });
 }
 function closeMenu(){
     $(function(){
         // console.log('click');
-        $('.nav').removeClass('open').hide('drop', 300);
+        $('.nav').removeClass('open').hide(300);
     });
 }

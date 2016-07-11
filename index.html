@@ -10,7 +10,6 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <script src="https://use.fontawesome.com/138a61fed7.js"></script>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-        <script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
         <link rel="stylesheet" href="css/style.css">
@@ -50,7 +49,7 @@
                             <p class="sub-title">{{position | uppercase}}</p>
 
                             <a ng-repeat="value in links" class="link-external" id="{{value.id}}" target="blank" href="{{value.link}}">
-                            <i class="fa fa-{{value.id}}" aria-hidden="true"></i>
+                                <i class="fa fa-{{value.id}}" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -134,70 +133,53 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul>
+                                        <!-- <li ng-repeat="value in skills">
+                                            <span class="level-habilidade">{{value.know}}</span>
+                                            <p class="text-featured text-habilidade">{{value.name}}</p>
+                                        </a> -->
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">HTML5</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">CSS3</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">PHP</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Java Script</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Java EE</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Java</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Visual Basic</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">C</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">C++</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">C#</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -207,68 +189,48 @@
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Laravel 5</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Codeigniter 3</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Symfony Framework</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Zend Framework 2</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">.NET</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Angular JS</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">JQuery</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Bootstrap</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Fundation</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Ionic</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -278,33 +240,24 @@
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Linguagem SQL</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">SGBD MySQL</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">SGBD SQL Server</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">SGBD Oracle</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -314,70 +267,48 @@
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Restful</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">GIT</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">SASS</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">LESS</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Scrum</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Sublime-Text 3</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">ATOM</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Android Studio</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Eclipse</p>
+                                            <span class="level-habilidade">intermediário</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Netbeans</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -485,23 +416,16 @@
                                 <div class="col-sm-12">
                                     <ul>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Português</p>
+                                            <span class="level-habilidade">fluente</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Inglês</p>
+                                            <span class="level-habilidade">avançado</span>
                                         </li>
                                         <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
                                             <p class="text-featured text-habilidade">Espanhol</p>
+                                            <span class="level-habilidade">básico</span>
                                         </li>
                                     </ul>
                                 </div>

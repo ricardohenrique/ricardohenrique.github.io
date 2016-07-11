@@ -1,4 +1,4 @@
-app.controller("ricardoMotaController", function($scope) {
+app.controller("portfolioController", function($scope) {
     // Perfil
     $scope.test = 8;
     $scope.firstName = "Ricardo";
