@@ -22,11 +22,12 @@ app.controller("portfolioController", function($scope) {
                     ];
 
     // habilidades
-    $scope.skills = [ 
-                        { name : 'HTML5', know : 'avançado'},
-                        { name : 'CSS3', know : 'avançado'},
-                        { name : 'PHP', know : 'avançado'},
-                        { name : 'Java Script', know : 'avançado'},
-                        { name : 'Java EE', know : 'básico'}
+    $scope.portfolio = [ 
+                        { id : 1, name : 'le chef'},
+                        { id : 2, name : 'organif food fest'},
+                        { id : 3, name : 'PRG Brasil'},
+                        { id : 4, name : 'Ocean2Share'},
+                        { id : 5, name : 'LPG Brasil'},
+                        { id : 5, name : 'CTM Advogados'}
                     ];
 });

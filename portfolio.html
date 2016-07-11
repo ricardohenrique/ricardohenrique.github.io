@@ -2,16 +2,20 @@
     <head>
         <meta charset="utf-8"> 
         <title>Ricardo Henrique Benevides Mota | Full Stack Developer</title>
-        <meta name="author" content="Ricardo Henrique Mota">
-        <meta name="description" content="Ricardo Henrique Mota">
-        <meta name="keywords" content="Ricardo Henrique Mota, Ricardo Mota, Ricardo Henrique, Ricardo, Henrique, Mota">
+        <meta name="author" content="Ricardo Henrique Benevides Mota">
+        <meta name="description" content="Ricardo Henrique Benevides Mota, Full Stack Developer. Desenvolvedor Web.">
+        <meta name="keywords" content="Ricardo Henrique Mota, Ricardo Mota, Ricardo Henrique, Ricardo, Henrique, Mota, desenvolvedor web, full stack">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
         <link rel="icon" sizes="192x192" href="files/favicon-ricardo-henrique.png">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <script src="https://use.fontawesome.com/138a61fed7.js"></script>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <script src="app/main.js"></script>
+        <script src="app/app.component.js"></script>
+        <script src="app/portfolioController.js"></script>
     </head>
     <body id="home" ng-app="ricardoMotaApp" ng-controller="portfolioController">
         <div class="nav-bar">
@@ -43,11 +47,16 @@
                         <div class="col-sm-9">
                             <h1 class="">Ricardo Henrique Benevides Mota</h1>
                             <p class="sub-title">FULL STACK DEVELOPER</p>
-                            <a class="link-external" id="github" target="blank" href="https://github.com/ricardohenrique"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="link-external" id="facebook" target="blank" href="https://www.facebook.com/ricardo.henrique.10420"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="link-external" id="linkedin" target="blank" href="https://br.linkedin.com/in/ricardo-henrique-mota-9a1033104"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a ng-repeat="value in links" class="link-external" id="{{value.id}}" target="blank" href="{{value.link}}">
+                                <i class="fa fa-{{value.id}}" aria-hidden="true"></i>
+                            </a>
                         </div>
                         <div class="col-sm-12">
+                            <div class="row" ng-repeat="value in portfolio">
+                                <div class="col-sm-12">
+                                    <p>{{value.id}}: {{value.name}}</p>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <p>le chef</p>
