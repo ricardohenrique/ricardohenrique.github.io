@@ -529,6 +529,9 @@ ul li {
     text-align: left; }
 
   #home .container .row.row-fourth .text-center {
-    text-align: left; } }
+    text-align: left; }
+
+  #home .portfolio-galery div img {
+    max-width: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
