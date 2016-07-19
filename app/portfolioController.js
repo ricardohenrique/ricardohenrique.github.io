@@ -23,27 +23,142 @@ app.controller("portfolioController", function($scope) {
 
     // habilidades
     $scope.portfolio = [ 
-                        { id : 1, name : 'i10as', image: 'ricardo-henrique-mota-i10as.jpg'},
-                        { id : 2, name : 'le chef', image: 'ricardo-henrique-mota-le-chef.jpg'},
-                        { id : 3, name : 'organif food fest', image: 'ricardo-henrique-mota-organic-food-fest.jpg'},
-                        { id : 4, name : 'PRG Brasil', image: 'ricardo-henrique-mota-prg-brasil.jpg'},
-                        { id : 5, name : 'Ocean2Share', image: 'ricardo-henrique-mota-ocean-2-share.jpg'},
-                        { id : 6, name : 'LPG Brasil', image: 'ricardo-henrique-mota-lpg-mais.jpg'},
-                        { id : 7, name : 'CTM Advogados', image: 'ricardo-henrique-mota-ctm-advogados.jpg'},
-                        { id : 8, name : 'Alphamesh', image: 'ricardo-henrique-mota-alphamesh.jpg'},
-                        { id : 9, name : 'Pratsy', image: 'ricardo-henrique-mota-pratsy.jpg'},
-                        { id : 10, name : 'Bar2Go', image: 'ricardo-henrique-mota-bar2go.jpg'},
-                        { id : 11, name : 'Balsalobre', image: 'ricardo-henrique-mota-balsalobre.jpg'},
-                        { id : 12, name : 'GIZE', image: 'ricardo-henrique-mota-gize.jpg'},
-                        { id : 13, name : 'Maadri', image: 'ricardo-henrique-mota-maadri.jpg'},
-                        // { id : 14, name : 'MAJESTIC', image: 'ricardo-henrique-sem-imagem.jpg'},
-                        { id : 15, name : 'PDVnet', image: 'ricardo-henrique-mota-pdv-net.jpg'},
-                        { id : 16, name : 'Regis Folco', image: 'ricardo-henrique-mota-regis-folco.jpg'},
-                        { id : 17, name : 'Cia de Comédia', image: 'ricardo-henrique-mota-cia-de-comedia.jpg'},
-                        { id : 18, name : 'SER GLASS', image: 'ricardo-henrique-mota-ser-glass.jpg'},
-                        { id : 19, name : 'Totality', image: 'ricardo-henrique-mota-totality.jpg'},
-                        { id : 20, name : 'SINPAPEL', image: 'ricardo-henrique-mota-sinpapel.jpg'},
-                        { id : 21, name : 'Uchinanchu', image: 'ricardo-henrique-mota-uchinanchu.jpg'},
-                        { id : 22, name : 'Você Brasil', image: 'ricardo-henrique-mota-voce-brasil.jpg'}
+                        { 
+                            id : 1, 
+                            name : 'i10as', 
+                            image: 'ricardo-henrique-mota-i10as.jpg', 
+                            summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat, mi eget lacinia porttitor, felis tellus iaculis est, at eleifend neque lorem sit amet orci.', 
+                            responsibility: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat, mi eget lacinia porttitor, felis tellus iaculis est, at eleifend neque lorem sit amet orci.', 
+                            technology: [
+                                'PHP',
+                                'Laravel',
+                                'HTML5',
+                                'CSS3 ',
+                                'Bootstrap',
+                                'MySQL',
+                                'SEO',
+                            ], 
+                            order: 100
+                        },
+                        { 
+                            id : 2, 
+                            name : 'le chef', 
+                            image: 'ricardo-henrique-mota-le-chef.jpg', 
+                            order: 99
+                        },
+                        { 
+                            id : 3, 
+                            name : 'organif food fest', 
+                            image: 'ricardo-henrique-mota-organic-food-fest.jpg', 
+                            order: 99
+                        },
+                        { 
+                            id : 4, 
+                            name : 'PRG Brasil', 
+                            image: 'ricardo-henrique-mota-prg-brasil.jpg', 
+                            order: 98
+                        },
+                        { 
+                            id : 5, 
+                            name : 'Ocean2Share', 
+                            image: 'ricardo-henrique-mota-ocean-2-share.jpg', 
+                            order: 98
+                        },
+                        { 
+                            id : 6, 
+                            name : 'LPG Brasil', 
+                            image: 'ricardo-henrique-mota-lpg-mais.jpg', 
+                            order: 97
+                        },
+                        { 
+                            id : 7, 
+                            name : 'CTM Advogados', 
+                            image: 'ricardo-henrique-mota-ctm-advogados.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 8, 
+                            name : 'Alphamesh', 
+                            image: 'ricardo-henrique-mota-alphamesh.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 9, 
+                            name : 'Pratsy', 
+                            image: 'ricardo-henrique-mota-pratsy.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 10, 
+                            name : 'Bar2Go', 
+                            image: 'ricardo-henrique-mota-bar2go.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 11, 
+                            name : 'Balsalobre', 
+                            image: 'ricardo-henrique-mota-balsalobre.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 12, 
+                            name : 'GIZE', 
+                            image: 'ricardo-henrique-mota-gize.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 13, 
+                            name : 'Maadri', 
+                            image: 'ricardo-henrique-mota-maadri.jpg', 
+                            order: 96
+                        },
+                        { 
+                            id : 15, 
+                            name : 'PDVnet', 
+                            image: 'ricardo-henrique-mota-pdv-net.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 16, 
+                            name : 'Regis Folco', 
+                            image: 'ricardo-henrique-mota-regis-folco.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 17, 
+                            name : 'Cia de Comédia', 
+                            image: 'ricardo-henrique-mota-cia-de-comedia.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 18, 
+                            name : 'SER GLASS', 
+                            image: 'ricardo-henrique-mota-ser-glass.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 19, 
+                            name : 'Totality', 
+                            image: 'ricardo-henrique-mota-totality.jpg', 
+                            order: 97
+                        },
+                        { 
+                            id : 20, 
+                            name : 'SINPAPEL', 
+                            image: 'ricardo-henrique-mota-sinpapel.jpg', 
+                            order: 97
+                        },
+                        { 
+                            id : 21, 
+                            name : 'Uchinanchu', 
+                            image: 'ricardo-henrique-mota-uchinanchu.jpg', 
+                            order: 1
+                        },
+                        { 
+                            id : 22, 
+                            name : 'Você Brasil', 
+                            image: 'ricardo-henrique-mota-voce-brasil.jpg', 
+                            order: 96
+                        }
                     ];
 });

@@ -53,9 +53,15 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="row portfolio-galery">
-                                <div class="col-sm-6" ng-repeat="value in portfolio">
+                                <div class="col-sm-12" ng-repeat="value in portfolio | orderBy:['-order', 'name']">
                                     <img src="files/{{value.image}}" alt="">
-                                    <p>{{value.id}}: {{value.name}}</p>
+                                    <p><strong>{{value.name}}</strong></p>
+                                    <p><strong>Resumo do projeto: </strong> {{value.summary}}</p>
+                                    <p><strong>Responsabilidades: </strong> {{value.responsibility}}</p>
+                                    <div class="tecnologias">
+                                        <p><strong>Tecnologias:</strong></p>
+                                        <span ng-repeat="respon in value.technology">{{respon}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
